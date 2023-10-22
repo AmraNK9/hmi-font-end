@@ -76,11 +76,13 @@ button.apply-btn{
     font-size: 22px;
     font-weight: 400;
 }
-
+.mySwiper{
+    background-color: rgba(0, 128, 0, 0) !important;
+}
 .teacher-card{
     border: 1px solid rgb(210, 207, 207);
-    box-shadow: 0 0 128px 0 #73c1e362,
-    0 32px 64px -48px #73b4d0b2;
+    /* box-shadow: 0 0 128px 0 #73c1e362,
+    0 32px 64px -48px #73b4d0b2; */
     border-radius: 15px;
     width: 180px;
     height: 230px;
@@ -89,8 +91,8 @@ button.apply-btn{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 128px 0 #73c1e362,
-    0 32px 64px -48px #73b4d0b2;
+    /* box-shadow: 0 0 128px 0 #73c1e362,
+    0 32px 64px -48px #73b4d0b2; */
 }
 
 .teacher-img{

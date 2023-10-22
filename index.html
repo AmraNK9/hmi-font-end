@@ -1,79 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="animate.css">
-    <link rel="stylesheet" href="style.css" />
-    <style>
-      /* nav section */
-      html,
-      body {
-        position: relative;
-        height: 100%;
-        background-color: white;
-      }
 
-      body {
-        background: #eee;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color: #000;
-        margin: 0;
-        padding: 0;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="croppie.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="animate.css">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* nav section */
+    html,
+    body {
+      position: relative;
+      height: 100%;
+      background-color: white;
+    }
 
-      swiper-container {
-        background-color: rgba(255, 255, 255, 0);
-        width: 100%;
-        height: 300px;
-      }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
 
-      swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #ffffff00;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-      }
+    swiper-container {
+      background-color: rgba(255, 255, 255, 0);
+      width: 100%;
+      height: 300px;
+    }
 
-      swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #ffffff00;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
 
-  /* program */
+    swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* program */
     .title {
       letter-spacing: 2px;
     }
 
-    .text-center .fa-solid{
+    .text-center .fa-solid {
       color: #4781C7;
       font-size: 58px;
       margin-bottom: 20px;
@@ -88,11 +78,13 @@
       width: 100%;
       padding: 5px;
     }
+
     .dotted_container {
       position: absolute;
       object-fit: contain;
       width: 100%;
     }
+
     .student_diversity_section .container-fluid {
       position: relative;
     }
@@ -126,22 +118,23 @@
         display: none;
       }
 
-      .dotted_container img{
+      .dotted_container img {
         height: 380px;
       }
     }
 
     @media screen and (max-width: 990px) {
-      .navbar .container-fluid{
+      .navbar .container-fluid {
         background-color: #ffffff;
       }
     }
-
+    
     /* activity_section */
     .activities {
       position: relative;
       background-color: transparent;
     }
+
     .activities-text {
       position: absolute;
       top: 50%;
@@ -153,6 +146,7 @@
       border-bottom: 8px solid rgb(60, 161, 168);
       z-index: 9999;
     }
+
     .activities-seemore {
       position: absolute;
       top: 70%;
@@ -164,12 +158,15 @@
       z-index: 9999;
       cursor: pointer;
     }
+
     .activities-seemore:hover {
       color: #73c2e3;
     }
+
     .ativity-image-wrapper .col {
       position: relative;
     }
+
     .ativity-image-wrapper .col img {
       width: 100%;
       object-fit: cover;
@@ -184,6 +181,7 @@
       opacity: 0.5;
       transition: 0.2s ease-in-out;
     }
+
     .ativity-image-wrapper .col .over-lay:hover {
       position: absolute;
       width: 100%;
@@ -191,614 +189,478 @@
       opacity: 0.1;
       background-color: white;
     }
-    
+
     /* nav sticky */
-        .sticky-top {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            height: 80px; 
-            z-index: 99999;
-            scroll-behavior: smooth;
-            
-            .nav-button{
-              height: 35px;
-              margin-top: 5px;
-            }
-            .navbar-collapse{
-              background-color: #fff;
-            }
-            .navbar-brand img{
-              height: 70px;
-              margin-left: 8px;
-              /* padding: 8px; */
-            }
+    .sticky-top {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 80px;
+      z-index: 99999;
+      scroll-behavior: smooth;
 
-            
-        }
+      .nav-button {
+        height: 35px;
+        margin-top: 5px;
+      }
 
-      /* color btn */
-        .blue{
-          background-color:#20A7DF ;
-        }
-        .blue_dark{
-          background-color: #4C81C5;
-        }
+      .navbar-collapse {
+        background-color: #fff;
+      }
 
-    </style>
-  </head>
-  <body>
-    <section class="navbar_section">
-      <div class="row g-0">
-        <div class="noti-container ">
-          <div class="noti">
-            <i class="fa-solid fa-bell" style="color: #dc4044"></i>
-            <span class="text-white">
-              Registration for October Intake(Batch 3) is opening now!
-            </span>
-          </div>
-        </div>
-        <div class="ph-container text-white">
-          <div class="phone-1">09 785 806 735 ,</div>
-          <div class="phone-2">09 785 806 735  </div>
-        </div>
-      </div>
-      
-      <nav class="navbar navbar-expand-lg bg-white">
-        <div class="container">
-          <div class="container-fluid border col-lg-4">
-            <div class="container d-flex justify-content-between">
-              <a class="navbar-brand " href="#">
-                <img src="image/logo.png" alt="">
-              </a>
-              <button class="btn navbar-toggler shadow-none " style="color: #4781C7; font-size: 40px;"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars "></i>
-                
-              </button>
-            </div>
-          </div>
-        </div>
-        
+      .navbar-brand img {
+        height: 70px;
+        margin-left: 8px;
+        /* padding: 8px; */
+      }
 
-        <div class="container-fluid">
-          <div class="collapse container navbar-collapse bg-white" id="navbarSupportedContent">
-            <ul class="navbar-nav border mb-2 mb-lg-0 d-flex justify-content-center col-lg-12 align-it">
-              <li class="nav-item me-3 border">
-                <a class="nav-link hmi-nav-link" aria-current="page" href="#">Academic Program</a>
-              </li>
-              <li class="nav-item me-3">
-                <a class="nav-link hmi-nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item me-3">
-                <a class="nav-link hmi-nav-link" href="#">Program Fee</a>
-              </li>
-              <li class="nav-item me-3">
-                <a class="nav-link hmi-nav-link" href="#">Student Experience</a>
-              </li>
-              <li class="nav-item me-3">
-                <button class="nav-link hmi-nav-link  nav-button">Apply Now</button>
-              </li>
-            </ul>
-          </div>
-        </div>
-        
-        
 
-      </nav>
+    }
 
-    </section>
-    <section class="landing-hmi">
-      <div class="landing-wrapper row  g-0 ">
-        <div class="col-md-7">
-          <div class="header-wrapper offset-1 ps-4 mt-5 ">
-            <h1 class="header1 mt-4">H O S T</h1>
-            <h2 class="header2 mt-3">MYANMAR INSTITUTE</h2>
-            <span class="sub-header mt-4 d-block"
-              >for your brighter future and career! 100% Job Guarantee!</span
-            >
-  
-            <button class="apply-btn rounded-pill mt-4">Apply Now</button>
-          </div>
-        </div>
-        <div class="col-md-5 d-none d-md-block">
-          <div id="canvas"></div>
+    /* color btn */
+    .blue {
+      background-color: #20A7DF;
+    }
+
+    .blue_dark {
+      background-color: #4C81C5;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+
+    <div id="demo-basic"></div>
+  </section>
+  <section class="navbar_section">
+    <div class="row g-0">
+      <div class="noti-container ">
+        <div class="noti">
+          <i class="fa-solid fa-bell" style="color: #dc4044"></i>
+          <span class="text-white">
+            Registration for October Intake(Batch 3) is opening now!
+          </span>
         </div>
       </div>
-    </section>
-    <section class="student_program bg-white">
+      <div class="ph-container text-white">
+        <div class="phone-1">09 785 806 735 ,</div>
+        <div class="phone-2">09 785 806 735 </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-white">
       <div class="container">
-        <div class="row g-0">
-          <div class="col-md-4 text-center  reavel-bottom py-5">
-            <i class="fa-solid fa-calendar-days " ></i>
-            <h4 class="text-info title">2-YEAR PROGRAM</h4>
-            <p class="m-0">
-              <b
-                >For your brighter feature and career!<br />100% Job
-                Guarantee</b
-              >
-            </p>
-          </div>
-          <div class="col-md-4 text-center  reavel-bottom py-5">           
-            <i class="fa-solid fa-laptop" ></i>
-            <h4 class="text-info title">SOFTWARE ENGINEERING</h4>
-            <p class="m-0">
-              <b
-                >For your brighter feature and career!<br />100% Job
-                Guarantee</b
-              >
-            </p>
-          </div>
-          <div class="col-md-4 text-center reavel-bottom py-5">
-            <i class="fa-solid fa-user-group"></i>
-            <h4 class="text-info title ">ON JOB TRAINING</h4>
-            <p class="m-0">
-              <b
-                >For your brighter feature and career!<br />100% Job
-                Guarantee</b
-              >
-            </p>
-          </div>
+        <div class="container-fluid border col-lg-4">
+          <div class="container d-flex justify-content-between">
+            <a class="navbar-brand " href="#">
+              <img src="image/logo.png" alt="">
+            </a>
+            <button class="btn navbar-toggler shadow-none " style="color: #4781C7; font-size: 40px;" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa-solid fa-bars "></i>
 
-          <div class="col-12 text-center revel-fade pb-5">
-            <a href="#" class="btn  rounded-pill py-2 text-white shadow-none" style="width: 250px;background-color: #20A7DF;">View More</a>
+            </button>
           </div>
         </div>
+      </div>
 
-        <div class="container">
-          <div class="row justify-content-around mb-3">
-            <div class="col-md-5 text-center m-0 p-0">
-              <iframe
-                class="w-100"
-                height="260"
-                src="https://www.youtube.com/embed/_U95WG6XZog?si=5ky4JTei8PvYZ_hc"
-                allowfullscreen
-              ></iframe>
+
+      <div class="container-fluid">
+        <div class="collapse container navbar-collapse bg-white" id="navbarSupportedContent">
+          <ul class="navbar-nav border mb-2 mb-lg-0 d-flex justify-content-center col-lg-12 align-it">
+            <li class="nav-item me-3 border">
+              <a class="nav-link hmi-nav-link" aria-current="page" href="#">Academic Program</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link hmi-nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link hmi-nav-link" href="#">Program Fee</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link hmi-nav-link" href="#">Student Experience</a>
+            </li>
+            <li class="nav-item me-3">
+              <button class="nav-link hmi-nav-link  nav-button">Apply Now</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+
+    </nav>
+
+  </section>
+  <section class="landing-hmi">
+    <div class="landing-wrapper row  g-0 ">
+      <div class="col-md-7">
+        <div class="header-wrapper offset-1 ps-4 mt-5 ">
+          <h1 class="header1 mt-4">H O S T</h1>
+          <h2 class="header2 mt-3">MYANMAR INSTITUTE</h2>
+          <span class="sub-header mt-4 d-block">for your brighter future and career! 100% Job Guarantee!</span>
+
+          <button class="apply-btn rounded-pill mt-4">Apply Now</button>
+        </div>
+      </div>
+      <div class="col-md-5 d-none d-md-block">
+        <div id="canvas"></div>
+      </div>
+    </div>
+  </section>
+  <section class="student_program bg-white">
+    <div class="container">
+      <div class="row g-0">
+        <div class="col-md-4 text-center  reavel-bottom py-5">
+          <i class="fa-solid fa-calendar-days "></i>
+          <h4 class="text-info title">2-YEAR PROGRAM</h4>
+          <p class="m-0">
+            <b>For your brighter feature and career!<br />100% Job
+              Guarantee</b>
+          </p>
+        </div>
+        <div class="col-md-4 text-center  reavel-bottom py-5">
+          <i class="fa-solid fa-laptop"></i>
+          <h4 class="text-info title">SOFTWARE ENGINEERING</h4>
+          <p class="m-0">
+            <b>For your brighter feature and career!<br />100% Job
+              Guarantee</b>
+          </p>
+        </div>
+        <div class="col-md-4 text-center reavel-bottom py-5">
+          <i class="fa-solid fa-user-group"></i>
+          <h4 class="text-info title ">ON JOB TRAINING</h4>
+          <p class="m-0">
+            <b>For your brighter feature and career!<br />100% Job
+              Guarantee</b>
+          </p>
+        </div>
+
+        <div class="col-12 text-center revel-fade pb-5">
+          <a href="#" class="btn  rounded-pill py-2 text-white shadow-none"
+            style="width: 250px;background-color: #20A7DF;">View More</a>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-around mb-3">
+          <div class="col-md-5 text-center m-0 p-0">
+            <iframe class="w-100" height="260" src="https://www.youtube.com/embed/_U95WG6XZog?si=5ky4JTei8PvYZ_hc"
+              allowfullscreen></iframe>
+          </div>
+          <div class="col-md-5 text-center m-0 p-0">
+            <iframe class="w-100" height="260" src="https://www.youtube.com/embed/3lWiRuzX3cE?si=Ee2gXuekSMrW_6Y-"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="student_diversity_section">
+
+    <div class="container" id="student_diversity">
+      <div class="row d-flex justify-content-around align-items-center mb-5">
+        <div class="col-md-5 d-flex flex-column justify-content-center align-items-center">
+          <h4 class="mb-5 d-flex align-items-start mt-4 student-diversity" style="z-index: 999;">
+            STUDENT DIVERSITY IN HMI
+          </h4>
+          <img src="./R.png" width="auto" height="200px" alt="" style="z-index: 9999;" />
+        </div>
+        <div class="col-md-4 mt-4 d-flex justify-content-center align-items-center">
+          <img src="./387327088_869003841393408_8937628880334378896_n.jpg" style="z-index: 9999;" width="300px"
+            height="auto" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="years_program">
+    <div class="row g-0">
+      <div class="first-second-year mt-5">
+        <button type="button" class="btn first-year blue">First Year</button>
+        <button type="button" class="btn second-year blue_dark">Second Year</button>
+      </div>
+    </div>
+    <div class="row g-0 it">
+      <div class="text-center first-head header-color curriculum">
+        OUR CURRICULUM
+      </div>
+      <div class="col-2 list">
+        <div class="circle first-circle">1</div>
+        <div class="doted"></div>
+        <div class="circle">2</div>
+        <div class="doted"></div>
+        <div class="circle">3</div>
+      </div>
+      <div class="col-10 it-card-container">
+        <div class="it-card">
+          <img src="image/teacher.jpg" alt="" />
+          <div class="it-card-content">
+            <div class="it-card-header first-head ">IT Passport</div>
+            <div class="it-card-about">
+              Fundamental Strategy, Management, Technology.
             </div>
-            <div class="col-md-5 text-center m-0 p-0">
-              <iframe
-                class="w-100"
-                height="260"
-                src="https://www.youtube.com/embed/3lWiRuzX3cE?si=Ee2gXuekSMrW_6Y-"
-                allowfullscreen
-              ></iframe>
+          </div>
+        </div>
+        <div class="it-card">
+          <img src="image/teacher.jpg" alt="" />
+          <div class="it-card-content">
+            <div class="it-card-header first-head">IT Passport</div>
+            <div class="it-card-about">
+              Fundamental Strategy, Management, Technology.
+            </div>
+          </div>
+        </div>
+        <div class="it-card mb-5">
+          <img src="image/teacher.jpg" alt="" />
+          <div class="it-card-content">
+            <div class="it-card-header first-head">IT Passport</div>
+            <div class="it-card-about">
+              Fundamental Strategy, Management, Technology.
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="student_diversity_section">
+    </div>
+  </section>
 
-      <div class="container" id="student_diversity">
-        <div class="row d-flex justify-content-around align-items-center mb-5">
-          <div
-            class="col-md-5 d-flex flex-column justify-content-center align-items-center"
-          >
-            <h4 class="mb-5 d-flex align-items-start mt-4 student-diversity" style="z-index: 999;">
-              STUDENT DIVERSITY IN HMI
-            </h4>
-            <img src="./R.png" width="auto" height="200px" alt="" style="z-index: 9999;" />
+  <section class="activity_section">
+    <div class="container-fluid activities">
+      <h1 class="text-center activities-text">Our Activities</h1>
+      <div class="row g-0">
+        <div class="col-12 p-0">
+          <div class="row g-0 ativity-image-wrapper" id="activityWrapper">
+            <div class="col p-0">
+              <div class="over-lay"></div>
+              <img src="image/Design1.jpg" alt="" width="100%" height="100%" />
+            </div>
+            <div class="col p-0">
+              <div class="over-lay"></div>
+              <img src="image/design2.jpg" alt="" width="100%" height="100%" />
+            </div>
+            <div class="col p-0">
+              <div class="over-lay"></div>
+              <img src="image/design7.jpg" alt="" width="100%" height="100%" />
+            </div>
+            <div class="col p-0">
+              <div class="over-lay"></div>
+              <img src="image/design9.jpg" alt="" width="100%" height="100%" />
+            </div>
+            <div class="col p-0">
+              <div class="over-lay"></div>
+              <img src="image/Design1.jpg" alt="" width="100%" height="100%" />
+            </div>
+            <div class="col p-0">
+              <div class="over-lay"></div>
+              <img src="image/design8.jpg" alt="" width="100%" height="100%" />
+            </div>
           </div>
-          <div
-            class="col-md-4 mt-4 d-flex justify-content-center align-items-center"
-          >
-            <img
-              src="./387327088_869003841393408_8937628880334378896_n.jpg" style="z-index: 9999;"
-              width="300px"
-              height="auto"
-              alt=""
-            />
+          <div class="row g-0 ativity-image-wrapper" id="activityWrapper">
+            <div class="col p-0">
+              <div class="over-lay"></div>
+              <img src="image/Design1.jpg" alt="" width="100%" height="100%" />
+            </div>
+            <div class="col p-0">
+              <div class="over-lay"></div>
+              <img src="image/design2.jpg" alt="" width="100%" height="100%" />
+            </div>
+            <div class="col p-0">
+              <div class="over-lay"></div>
+              <img src="image/design7.jpg" alt="" width="100%" height="100%" />
+            </div>
+            <div class="col p-0">
+              <div class="over-lay"></div>
+              <img src="image/design9.jpg" alt="" width="100%" height="100%" />
+            </div>
+            <div class="col p-0">
+              <div class="over-lay"></div>
+              <img src="image/Design1.jpg" alt="" width="100%" height="100%" />
+            </div>
+            <div class="col p-0">
+              <div class="over-lay"></div>
+              <img src="image/design8.jpg" alt="" width="100%" height="100%" />
+            </div>
+          </div>
+          <div class="row g-0 ativity-image-wrapper" id="activityWrapper">
+            <div class="col p-0">
+              <div class="over-lay"></div>
+              <img src="image/Design1.jpg" alt="" width="100%" height="100%" />
+            </div>
+            <div class="col p-0">
+              <div class="over-lay"></div>
+              <img src="image/design2.jpg" alt="" width="100%" height="100%" />
+            </div>
+            <div class="col p-0">
+              <div class="over-lay"></div>
+              <img src="image/design7.jpg" alt="" width="100%" height="100%" />
+            </div>
+            <div class="col p-0">
+              <div class="over-lay"></div>
+              <img src="image/design9.jpg" alt="" width="100%" height="100%" />
+            </div>
+            <div class="col p-0">
+              <div class="over-lay"></div>
+              <img src="image/Design1.jpg" alt="" width="100%" height="100%" />
+            </div>
+            <div class="col p-0">
+              <div class="over-lay"></div>
+              <img src="image/design8.jpg" alt="" width="100%" height="100%" />
+            </div>
+          </div>
+          <div class="row g-0 ativity-image-wrapper" id="activityWrapper">
+            <div class="col p-0">
+              <div class="over-lay"></div>
+              <img src="image/Design1.jpg" alt="" width="100%" height="100%" />
+            </div>
+            <div class="col p-0">
+              <div class="over-lay"></div>
+              <img src="image/design2.jpg" alt="" width="100%" height="100%" />
+            </div>
+            <div class="col p-0">
+              <div class="over-lay"></div>
+              <img src="image/design7.jpg" alt="" width="100%" height="100%" />
+            </div>
+            <div class="col p-0">
+              <div class="over-lay"></div>
+              <img src="image/design9.jpg" alt="" width="100%" height="100%" />
+            </div>
+            <div class="col p-0">
+              <div class="over-lay"></div>
+              <img src="image/Design1.jpg" alt="" width="100%" height="100%" />
+            </div>
+            <div class="col p-0">
+              <div class="over-lay"></div>
+              <img src="image/design8.jpg" alt="" width="100%" height="100%" />
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-        <section class="years_program">
-          <div class="row g-0" >
-            <div class="first-second-year mt-5">
-              <button type="button" class="btn first-year blue">First Year</button>
-              <button type="button" class="btn second-year blue_dark">Second Year</button>
-            </div>
-          </div>
-          <div class="row g-0 it">
-            <div class="text-center first-head header-color curriculum">
-              OUR CURRICULUM
-            </div>
-            <div class="col-2 list">
-              <div class="circle first-circle">1</div>
-              <div class="doted"></div>
-              <div class="circle">2</div>
-              <div class="doted"></div>
-              <div class="circle">3</div>
-            </div>
-            <div class="col-10 it-card-container">
-              <div class="it-card">
-                <img src="image/teacher.jpg" alt="" />
-                <div class="it-card-content">
-                  <div class="it-card-header first-head ">IT Passport</div>
-                  <div class="it-card-about">
-                    Fundamental Strategy, Management, Technology.
-                  </div>
-                </div>
-              </div>
-              <div class="it-card">
-                <img src="image/teacher.jpg" alt="" />
-                <div class="it-card-content">
-                  <div class="it-card-header first-head">IT Passport</div>
-                  <div class="it-card-about">
-                    Fundamental Strategy, Management, Technology.
-                  </div>
-                </div>
-              </div>
-              <div class="it-card mb-5">
-                <img src="image/teacher.jpg" alt="" />
-                <div class="it-card-content">
-                  <div class="it-card-header first-head">IT Passport</div>
-                  <div class="it-card-about">
-                    Fundamental Strategy, Management, Technology.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+  <section class="core_team_section">
+  <div class="container">
+    <div class="text-center first-head header-color  mt-3">OUR CORE TEAM</div>
+    <div class="text-center teacher-second-head">
+      Professional Lectures And Industry Experts
+    </div>
+    <swiper-container class="mySwiper" style="background-color: white !important;" autoplay-delay="2500" init="false" loop="true">
+      <swiper-slide>
+        <div class="teacher-card">
+          <img class="teacher-img" src="image/teacher.jpg" alt="" />
+          <div class="teacher-name header-color">THWIN HTOO NAUNG</div>
+          <div class="teacher-job">PROJECT MANAGER</div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="teacher-card">
+          <img class="teacher-img" src="image/teacher.jpg" alt="" />
+          <div class="teacher-name header-color">THWIN HTOO NAUNG</div>
+          <div class="teacher-job">PROJECT MANAGER</div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="teacher-card">
+          <img class="teacher-img" src="image/teacher.jpg" alt="" />
+          <div class="teacher-name header-color">THWIN HTOO NAUNG</div>
+          <div class="teacher-job">PROJECT MANAGER</div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="teacher-card">
+          <img class="teacher-img" src="image/teacher.jpg" alt="" />
+          <div class="teacher-name header-color">THWIN HTOO NAUNG</div>
+          <div class="teacher-job">PROJECT MANAGER</div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="teacher-card">
+          <img class="teacher-img" src="image/teacher.jpg" alt="" />
+          <div class="teacher-name header-color">THWIN HTOO NAUNG</div>
+          <div class="teacher-job">PROJECT MANAGER</div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="teacher-card">
+          <img class="teacher-img" src="image/teacher.jpg" alt="" />
+          <div class="teacher-name header-color">THWIN HTOO NAUNG</div>
+          <div class="teacher-job">PROJECT MANAGER</div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="teacher-card">
+          <img class="teacher-img" src="image/teacher.jpg" alt="" />
+          <div class="teacher-name header-color">THWIN HTOO NAUNG</div>
+          <div class="teacher-job">PROJECT MANAGER</div>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+  </div>
+  </section>
 
-        <section class="activity_section">
-          <div class="container-fluid activities">
-            <h1 class="text-center activities-text">Our Activities</h1>
-            <div class="row g-0">
-              <div class="col-12 p-0">
-                <div class="row g-0 ativity-image-wrapper" id="activityWrapper">
-                  <div class="col p-0">
-                    <div class="over-lay"></div>
-                    <img
-                      src="image/Design1.jpg"
-                      alt=""
-                      width="100%"
-                      height="100%"
-                    />
-                  </div>
-                  <div class="col p-0">
-                    <div class="over-lay"></div>
-                    <img
-                      src="image/design2.jpg"
-                      alt=""
-                      width="100%"
-                      height="100%"
-                    />
-                  </div>
-                  <div class="col p-0">
-                    <div class="over-lay"></div>
-                    <img
-                      src="image/design7.jpg"
-                      alt=""
-                      width="100%"
-                      height="100%"
-                    />
-                  </div>
-                  <div class="col p-0">
-                    <div class="over-lay"></div>
-                    <img
-                      src="image/design9.jpg"
-                      alt=""
-                      width="100%"
-                      height="100%"
-                    />
-                  </div>
-                  <div class="col p-0">
-                    <div class="over-lay"></div>
-                    <img
-                      src="image/Design1.jpg"
-                      alt=""
-                      width="100%"
-                      height="100%"
-                    />
-                  </div>
-                  <div class="col p-0">
-                    <div class="over-lay"></div>
-                    <img
-                      src="image/design8.jpg"
-                      alt=""
-                      width="100%"
-                      height="100%"
-                    />
-                  </div>
-                </div>
-                <div class="row g-0 ativity-image-wrapper" id="activityWrapper">
-                  <div class="col p-0">
-                    <div class="over-lay"></div>
-                    <img
-                      src="image/Design1.jpg"
-                      alt=""
-                      width="100%"
-                      height="100%"
-                    />
-                  </div>
-                  <div class="col p-0">
-                    <div class="over-lay"></div>
-                    <img
-                      src="image/design2.jpg"
-                      alt=""
-                      width="100%"
-                      height="100%"
-                    />
-                  </div>
-                  <div class="col p-0">
-                    <div class="over-lay"></div>
-                    <img
-                      src="image/design7.jpg"
-                      alt=""
-                      width="100%"
-                      height="100%"
-                    />
-                  </div>
-                  <div class="col p-0">
-                    <div class="over-lay"></div>
-                    <img
-                      src="image/design9.jpg"
-                      alt=""
-                      width="100%"
-                      height="100%"
-                    />
-                  </div>
-                  <div class="col p-0">
-                    <div class="over-lay"></div>
-                    <img
-                      src="image/Design1.jpg"
-                      alt=""
-                      width="100%"
-                      height="100%"
-                    />
-                  </div>
-                  <div class="col p-0">
-                    <div class="over-lay"></div>
-                    <img
-                      src="image/design8.jpg"
-                      alt=""
-                      width="100%"
-                      height="100%"
-                    />
-                  </div>
-                </div>
-                <div class="row g-0 ativity-image-wrapper" id="activityWrapper">
-                  <div class="col p-0">
-                    <div class="over-lay"></div>
-                    <img
-                      src="image/Design1.jpg"
-                      alt=""
-                      width="100%"
-                      height="100%"
-                    />
-                  </div>
-                  <div class="col p-0">
-                    <div class="over-lay"></div>
-                    <img
-                      src="image/design2.jpg"
-                      alt=""
-                      width="100%"
-                      height="100%"
-                    />
-                  </div>
-                  <div class="col p-0">
-                    <div class="over-lay"></div>
-                    <img
-                      src="image/design7.jpg"
-                      alt=""
-                      width="100%"
-                      height="100%"
-                    />
-                  </div>
-                  <div class="col p-0">
-                    <div class="over-lay"></div>
-                    <img
-                      src="image/design9.jpg"
-                      alt=""
-                      width="100%"
-                      height="100%"
-                    />
-                  </div>
-                  <div class="col p-0">
-                    <div class="over-lay"></div>
-                    <img
-                      src="image/Design1.jpg"
-                      alt=""
-                      width="100%"
-                      height="100%"
-                    />
-                  </div>
-                  <div class="col p-0">
-                    <div class="over-lay"></div>
-                    <img
-                      src="image/design8.jpg"
-                      alt=""
-                      width="100%"
-                      height="100%"
-                    />
-                  </div>
-                </div>
-                <div class="row g-0 ativity-image-wrapper" id="activityWrapper">
-                  <div class="col p-0">
-                    <div class="over-lay"></div>
-                    <img
-                      src="image/Design1.jpg"
-                      alt=""
-                      width="100%"
-                      height="100%"
-                    />
-                  </div>
-                  <div class="col p-0">
-                    <div class="over-lay"></div>
-                    <img
-                      src="image/design2.jpg"
-                      alt=""
-                      width="100%"
-                      height="100%"
-                    />
-                  </div>
-                  <div class="col p-0">
-                    <div class="over-lay"></div>
-                    <img
-                      src="image/design7.jpg"
-                      alt=""
-                      width="100%"
-                      height="100%"
-                    />
-                  </div>
-                  <div class="col p-0">
-                    <div class="over-lay"></div>
-                    <img
-                      src="image/design9.jpg"
-                      alt=""
-                      width="100%"
-                      height="100%"
-                    />
-                  </div>
-                  <div class="col p-0">
-                    <div class="over-lay"></div>
-                    <img
-                      src="image/Design1.jpg"
-                      alt=""
-                      width="100%"
-                      height="100%"
-                    />
-                  </div>
-                  <div class="col p-0">
-                    <div class="over-lay"></div>
-                    <img
-                      src="image/design8.jpg"
-                      alt=""
-                      width="100%"
-                      height="100%"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="jquery-3.7.1.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="croppie.min.js"></script>
 
-        <section class="core_team_section">
-          <div class="text-center first-head header-color  mt-3">OUR CORE TEAM</div>
-            <div class="text-center teacher-second-head">
-              Professional Lectures And Industry Experts
-            </div>
-                <swiper-container
-                  class="mySwiper"
-                  autoplay-delay="2500"
-                  init="false"
-                  loop="true"
-                >
-                  <swiper-slide>
-                    <div class="teacher-card">
-                      <img class="teacher-img" src="image/teacher.jpg" alt="" />
-                      <div class="teacher-name header-color">THWIN HTOO NAUNG</div>
-                      <div class="teacher-job">PROJECT MANAGER</div>
-                    </div>
-                  </swiper-slide>
-                  <swiper-slide>
-                    <div class="teacher-card">
-                      <img class="teacher-img" src="image/teacher.jpg" alt="" />
-                      <div class="teacher-name header-color">THWIN HTOO NAUNG</div>
-                      <div class="teacher-job">PROJECT MANAGER</div>
-                    </div>
-                  </swiper-slide>
-                  <swiper-slide>
-                    <div class="teacher-card">
-                      <img class="teacher-img" src="image/teacher.jpg" alt="" />
-                      <div class="teacher-name header-color">THWIN HTOO NAUNG</div>
-                      <div class="teacher-job">PROJECT MANAGER</div>
-                    </div>
-                  </swiper-slide>
-                  <swiper-slide>
-                    <div class="teacher-card">
-                      <img class="teacher-img" src="image/teacher.jpg" alt="" />
-                      <div class="teacher-name header-color">THWIN HTOO NAUNG</div>
-                      <div class="teacher-job">PROJECT MANAGER</div>
-                    </div>
-                  </swiper-slide>
-                  <swiper-slide>
-                    <div class="teacher-card">
-                      <img class="teacher-img" src="image/teacher.jpg" alt="" />
-                      <div class="teacher-name header-color">THWIN HTOO NAUNG</div>
-                      <div class="teacher-job">PROJECT MANAGER</div>
-                    </div>
-                  </swiper-slide>
-                  <swiper-slide>
-                    <div class="teacher-card">
-                      <img class="teacher-img" src="image/teacher.jpg" alt="" />
-                      <div class="teacher-name header-color">THWIN HTOO NAUNG</div>
-                      <div class="teacher-job">PROJECT MANAGER</div>
-                    </div>
-                  </swiper-slide>
-                  <swiper-slide>
-                    <div class="teacher-card">
-                      <img class="teacher-img" src="image/teacher.jpg" alt="" />
-                      <div class="teacher-name header-color">THWIN HTOO NAUNG</div>
-                      <div class="teacher-job">PROJECT MANAGER</div>
-                    </div>
-                  </swiper-slide>
-                </swiper-container>
-        </section>
-        <script
-			src="https://code.jquery.com/jquery-3.7.1.min.js"
-			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-			crossorigin="anonymous"
-		></script>
-       <script src="jquery-3.7.1.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+  <script src="jquery.fittext.js"></script>
+  <script src="jquery.lettering.js"></script>
+  <script src="jquery.textillate.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.18.3/dist/tsparticles.min.js"></script>
 
-    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
-<script src="jquery.fittext.js"></script>
-<script src="jquery.lettering.js"></script>
-<script src="jquery.textillate.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/tsparticles@1.18.3/dist/tsparticles.min.js"></script>
-     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
-    <script src="app.js"></script>
-    <script src="index.js"></script>
-
-    <script>
-      const swiperEl = document.querySelector("swiper-container");
-      Object.assign(swiperEl, {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        pagination: {
-          clickable: true,
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+  <script src="app.js"></script>
+  <script src="index.js"></script>
+  <script>
+    const swiperEl = document.querySelector("swiper-container");
+    Object.assign(swiperEl, {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 5,
         },
-        breakpoints: {
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 4,
-            spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 5,
-            spaceBetween: 50,
-          },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 5,
         },
-      });
-      swiperEl.initialize();
-    </script>
-    <script>
-       window.onscroll = function () {
-            myFunction()
-        };
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 10,
+        },
+      },
+    });
+    swiperEl.initialize();
+  </script>
+  <script>
+    window.onscroll = function () {
+      myFunction()
+    };
 
-        var navbar = document.querySelector(".navbar");
-        var sticky = navbar.offsetTop;
+    var navbar = document.querySelector(".navbar");
+    var sticky = navbar.offsetTop;
 
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky-top");
-                
-            } else {
-                navbar.classList.remove("sticky-top");
-            }
-        }
-        
-    </script>
-  </body>
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky-top");
+
+      } else {
+        navbar.classList.remove("sticky-top");
+      }
+    }
+
+  </script>
+</body>
+
 </html>

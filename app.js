@@ -1,5 +1,181 @@
 //Network Animation
-tsParticles
+
+
+//Text Animation
+$(document).ready(function () {
+	ScrollReveal().reveal('.landing-wrapper',
+{
+	distance:"0%",
+	opacity:1,
+	reset: true,
+	beforeReveal: function (el) {
+		$(".header1").textillate({
+			initialDelay: 0,
+			in: {
+				effect: "fadeInRight",
+	
+				delay: "10",
+				speed: "1000",
+			},
+		});
+		$(".header2").textillate({
+			initialDelay: 200,
+			in: {
+				effect: "fadeInRight",
+				delay: "10",
+				speed: "5000",
+			},
+		});
+		$(".sub-header").textillate({
+			initialDelay: 500,
+			in: {
+				effect: "bounceIn",
+				delay: "5",
+				speed: "1000",
+				sync: false,
+				shuffle: false,
+				reverse: false,
+	
+			},
+		});
+	}
+}
+);
+
+	
+});
+
+//Scroll Reveal
+
+//class_base
+ScrollReveal().reveal('.apply-btn',
+{
+	delay:750,
+	distance: '150%',
+    origin: 'bottom',
+}
+);
+
+ScrollReveal().reveal('.reavel-bottom',
+{
+	distance: '150%',
+    origin: 'bottom',
+}
+);
+
+ScrollReveal().reveal('.revel-fade',
+{
+	opecity:.4
+}
+);
+
+ScrollReveal().reveal('.revel-right',{
+	distance: '150%',
+    origin: 'right',
+}
+)
+
+//component_base
+ScrollReveal().reveal('.student_program',{
+	// distance: '100%',
+	// origin: 'bottom',
+	afterReveal:function (ev){
+		console.log(ev)
+		$(".student_program .title").textillate({
+			initialDelay: 100,
+			in: {
+				effect: "bounceIn",
+				delay: "5",
+				speed: "1000",
+				sync: false,
+				shuffle: false,
+				reverse: false,
+	
+			},
+		});
+	}
+})
+ScrollReveal().reveal('.it-card',{
+	distance: '150%',
+	origin: 'right',
+})
+
+// width_speciphic revel
+if(window.outerWidth > 767){
+console.log()
+}else{
+
+}
+
+setInterval(()=>{
+	$(".header1").textillate({
+		initialDelay: 0,
+		in: {
+			effect: "fadeInRight",
+
+			delay: "10",
+			speed: "1000",
+		},
+	});
+})
+function imagesToRoundedImages(srcArray, callback) {
+	const roundedImages = [];
+	let imagesLoaded = 0;
+  
+	// Define a function to process each image
+	function processImage(src, index) {
+	  const img = new Image();
+	  img.src = src;
+  
+	  img.onload = () => {
+		const canvas = document.createElement('canvas');
+		const ctx = canvas.getContext('2d');
+  
+		canvas.width = img.width;
+		canvas.height = img.width;
+  
+		ctx.beginPath();
+		ctx.arc( Math.min(img.width, img.height) / 2, Math.min(img.width, img.height) / 2, Math.min(img.width, img.height) / 2, 0, Math.PI * 2);
+		ctx.closePath();
+		ctx.clip();
+  
+		ctx.drawImage(img, 0, 0, img.width, img.height);
+  
+		const roundedImageDataURL = canvas.toDataURL('roundedimages');
+		roundedImages[index] = roundedImageDataURL;
+  
+		imagesLoaded++;
+  
+		if (imagesLoaded === srcArray.length) {
+		  callback(roundedImages);
+		}
+	  };
+	}
+  
+	// Process each image in the array
+	srcArray.forEach((src, index) => {
+	  processImage(src, index);
+	});
+  }
+  
+  // Example usage:
+  const imageContainer = document.getElementById("demo-basic")
+  const imageSources = ['sample.png', 'sample2.png', 'sample3.png'];
+  imagesToRoundedImages(imageSources, (roundedImages) => {
+	// roundedImages is an array of rounded image data URLs in PNG format
+	console.log(roundedImages);
+	let ImageArray = []
+	
+	roundedImages.forEach(image => {
+		let Imageobject = 
+			{
+				replace_color: true,
+				src: image,
+			}
+		ImageArray.push(Imageobject)
+	
+	});
+	tsParticles
 	.load("canvas", {
 		fpsLimit: 90,
 		interactivity: {
@@ -145,34 +321,15 @@ tsParticles
 					value: ["hello", "love you"],
 					weight: "3",
 				},
-				image: [
-					{
-						height: 100,
-						replace_color: true,
-						src: "sample.png",
-						width: 100,
-					},
-					{
-						height: 100,
-						replace_color: true,
-						src: "sample.png",
-						width: 100,
-					},
-					{
-						height: 100,
-						replace_color: true,
-						src: "sample2.png",
-						width: 100,
-					},
-				],
-				polygon: { nb_sides: 3 },
-				polygon: {
-					draw: { enable: true, lineColor: "#4b80c2", lineWidth: 0.5 },
-					move: { radius: 10 },
-					scale: 1,
-					type: "none",
-					url: "",
-				},
+				image: ImageArray,
+				// polygon: { nb_sides: 3 },
+				// polygon: {
+				// 	draw: { enable: true, lineColor: "#4b80c2", lineWidth: 0.5 },
+				// 	move: { radius: 10 },
+				// 	scale: 1,
+				// 	type: "none",
+				// 	url: "",
+				// },
 				type: ["circle", "image"],
 			},
 			stroke: { color: "#21a7e0", width: 1 },
@@ -204,121 +361,7 @@ tsParticles
 			}
 		});
 	});
-
-//Text Animation
-$(document).ready(function () {
-	ScrollReveal().reveal('.landing-wrapper',
-{
-	distance:"0%",
-	opacity:1,
-	reset: true,
-	beforeReveal: function (el) {
-		$(".header1").textillate({
-			initialDelay: 0,
-			in: {
-				effect: "fadeInRight",
-	
-				delay: "10",
-				speed: "1000",
-			},
-		});
-		$(".header2").textillate({
-			initialDelay: 200,
-			in: {
-				effect: "fadeInRight",
-				delay: "10",
-				speed: "5000",
-			},
-		});
-		$(".sub-header").textillate({
-			initialDelay: 500,
-			in: {
-				effect: "bounceIn",
-				delay: "5",
-				speed: "1000",
-				sync: false,
-				shuffle: false,
-				reverse: false,
-	
-			},
-		});
-	}
-}
-);
-
-	
-});
-
-//Scroll Reveal
-
-//class_base
-ScrollReveal().reveal('.apply-btn',
-{
-	delay:750,
-	distance: '150%',
-    origin: 'bottom',
-}
-);
-
-ScrollReveal().reveal('.reavel-bottom',
-{
-	distance: '150%',
-    origin: 'bottom',
-}
-);
-
-ScrollReveal().reveal('.revel-fade',
-{
-	opecity:.4
-}
-);
-
-ScrollReveal().reveal('.revel-right',{
-	distance: '150%',
-    origin: 'right',
-}
-)
-
-//component_base
-ScrollReveal().reveal('.student_program',{
-	// distance: '100%',
-	// origin: 'bottom',
-	afterReveal:function (ev){
-		console.log(ev)
-		$(".student_program .title").textillate({
-			initialDelay: 100,
-			in: {
-				effect: "bounceIn",
-				delay: "5",
-				speed: "1000",
-				sync: false,
-				shuffle: false,
-				reverse: false,
-	
-			},
-		});
-	}
-})
-ScrollReveal().reveal('.it-card',{
-	distance: '150%',
-	origin: 'right',
-})
-
-// width_speciphic revel
-if(window.outerWidth > 767){
-console.log()
-}else{
-
-}
-
-setInterval(()=>{
-	$(".header1").textillate({
-		initialDelay: 0,
-		in: {
-			effect: "fadeInRight",
-
-			delay: "10",
-			speed: "1000",
-		},
-	});
-})
+  
+	// You can display the rounded images or save them as needed.
+  });
+  
