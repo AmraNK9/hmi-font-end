@@ -443,5 +443,16 @@ button.apply-btn{
         width: 250px;
     }
 }
-
-
+/*------*/
+.student_diversity_section{
+    background-image: url(pngwing.com.png);
+    background-repeat: repeat;
+    background-position: contain;
+    background-size: 200px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+}
+.student-diversity{
+    color: #20A7DF;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

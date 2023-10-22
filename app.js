@@ -209,8 +209,10 @@ tsParticles
 $(document).ready(function () {
 	ScrollReveal().reveal('.landing-wrapper',
 {
+	distance:"0%",
+	opacity:1,
 	reset: true,
-	afterReveal: function (el) {
+	beforeReveal: function (el) {
 		$(".header1").textillate({
 			initialDelay: 0,
 			in: {
@@ -309,3 +311,14 @@ console.log()
 
 }
 
+setInterval(()=>{
+	$(".header1").textillate({
+		initialDelay: 0,
+		in: {
+			effect: "fadeInRight",
+
+			delay: "10",
+			speed: "1000",
+		},
+	});
+})
